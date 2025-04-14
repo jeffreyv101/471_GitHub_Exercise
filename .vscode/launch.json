@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/jeffreyvandever/Library/CloudStorage/OneDrive-LibertyUniversity/College/CSCN 471/Class Exercise 4-14/GitClassExercise/471_GitHub_Exercise",
+      "program": "/Users/jeffreyvandever/Library/CloudStorage/OneDrive-LibertyUniversity/College/CSCN 471/Class Exercise 4-14/GitClassExercise/471_GitHub_Exercise/build/Debug/outDebug"
+    }
+  ]
+}
