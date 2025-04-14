@@ -91,6 +91,12 @@ public:
     if (root == NULL) cout << "The BST is empty.\n";
     else printhelp(root, 0);
   }
+
+  // print preorder
+  void printPreOrder() const {
+	if (root == NULL) cout << "The BST is empty.\n";
+	else root->preorder();
+  }
   
 };
 
@@ -196,4 +202,14 @@ printhelp(BSTNode<Key, E>* root, int level) const {
   printhelp(root->left(), level+1);   // Do left subtree
   visit(root);						  // Print node value
   printhelp(root->right(), level+1);  // Do right subtree
+}
+
+// Print out a BST PREORDER
+template <typename Key, typename E>
+void BST<Key, E>::
+preorder(BSTNode<Key, E>* root, int level) const {
+    if (root == NULL) return;           // Empty tree
+    visit(root);						  // Print node value
+    printhelp(root->left(), level + 1);   // Do left subtree
+    printhelp(root->right(), level + 1);  // Do right subtree
 }
